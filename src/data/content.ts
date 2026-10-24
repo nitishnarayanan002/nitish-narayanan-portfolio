@@ -3,6 +3,9 @@ import logoApollo from "@/assets/logo_apollo.png";
 import logoManipal from "@/assets/logo_manipal.png";
 import logoNarayana from "@/assets/logo_narayana.png";
 import logoTvs from "@/assets/logo_tvs.png";
+import logoNike from "@/assets/logo_nike.png";
+import logoPuma from "@/assets/logo_puma.png";
+import logoLg from "@/assets/logo_lg.png";
 
 export const contact = {
   name: "Nitish Narayanan",
