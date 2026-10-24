@@ -27,10 +27,17 @@ export function Reveal({
           io.disconnect();
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      // Trigger well before the element enters view so fast scrolling
+      // never leaves content stuck invisible.
+      { threshold: 0.05, rootMargin: "0px 0px 15% 0px" },
     );
     io.observe(el);
-    return () => io.disconnect();
+    // Failsafe: never leave content hidden if the observer misfires.
+    const failsafe = window.setTimeout(() => setVisible(true), 1800);
+    return () => {
+      io.disconnect();
+      window.clearTimeout(failsafe);
+    };
   }, []);
 
   return (
