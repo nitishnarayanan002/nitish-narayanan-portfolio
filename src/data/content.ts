@@ -3,6 +3,9 @@ import logoApollo from "@/assets/logo_apollo.png";
 import logoManipal from "@/assets/logo_manipal.png";
 import logoNarayana from "@/assets/logo_narayana.png";
 import logoTvs from "@/assets/logo_tvs.png";
+import logoNike from "@/assets/logo_nike.png";
+import logoPuma from "@/assets/logo_puma.png";
+import logoLg from "@/assets/logo_lg.png";
 
 export const contact = {
   name: "Nitish Narayanan",
@@ -242,7 +245,7 @@ export const caseStudies: CaseStudy[] = [
     index: "05",
     industry: "Retail",
     name: "Puma",
-    mark: "P",
+    logo: logoPuma,
     challenge: "Post-sales communication was scattered across channels and lost personalisation.",
     solution:
       "Deployed a post-sales chatbot to address order tracking, cancellations and delivery ETAs. Paired with a marketing automation layer on the website pushing auto-messages for order confirmation and item intimation.",
@@ -253,7 +256,7 @@ export const caseStudies: CaseStudy[] = [
     index: "06",
     industry: "Retail",
     name: "Nike",
-    mark: "N",
+    logo: logoNike,
     challenge:
       "Nike was running the After Dark Tour (women-only) in India for the first time and needed accurate information delivery plus 3-month pre-run engagement for participants.",
     solution:
@@ -265,7 +268,7 @@ export const caseStudies: CaseStudy[] = [
     index: "07",
     industry: "Retail · Consumer Electronics",
     name: "LG",
-    mark: "L",
+    logo: logoLg,
     challenge: "Gaps in post-sales engagement after appliance purchase.",
     solution:
       "Automated WhatsApp journeys triggered on every order — covering installation scheduling and AMC offer nudges via the LG official channel.",
