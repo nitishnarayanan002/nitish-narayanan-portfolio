@@ -1,24 +1,59 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import CaseStudies from "@/components/CaseStudies";
+import ClaudeStudio from "@/components/ClaudeStudio";
+import AiPortfolio from "@/components/AiPortfolio";
+import Capabilities from "@/components/Capabilities";
+import Education from "@/components/Education";
+import Contact from "@/components/Contact";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Nitish Narayanan · Solution Engineering Leader" },
+      {
+        name: "description",
+        content:
+          "Nitish Narayanan — Solution Engineering Chapter Lead at Infobip. 10+ years across CPaaS, CCaaS and agentic AI, turning communication technology into measurable customer outcomes.",
+      },
+      { property: "og:title", content: "Nitish Narayanan · Solution Engineering Leader" },
+      {
+        property: "og:description",
+        content:
+          "Solution Engineering Chapter Lead at Infobip — CPaaS, CCaaS and agentic AI for enterprise customer engagement across healthcare, retail and automotive.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Nitish Narayanan · Solution Engineering Leader" },
+      {
+        name: "twitter:description",
+        content:
+          "Solution Engineering Chapter Lead at Infobip — CPaaS, CCaaS and agentic AI for enterprise customer engagement.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background text-foreground">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <About />
+      <Experience />
+      <CaseStudies />
+      <ClaudeStudio />
+      <AiPortfolio />
+      <Capabilities />
+      <Education />
+      <Contact />
+    </main>
   );
 }
