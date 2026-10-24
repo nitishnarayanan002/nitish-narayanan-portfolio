@@ -6,6 +6,7 @@ import logoTvs from "@/assets/logo_tvs.png";
 import logoNike from "@/assets/logo_nike.png";
 import logoPuma from "@/assets/logo_puma.png";
 import logoLg from "@/assets/logo_lg.png";
+import logoBankbazaar from "@/assets/logo_bankbazaar.png";
 
 export const contact = {
   name: "Nitish Narayanan",
@@ -280,6 +281,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "BFSI",
     name: "BankBazaar",
     mark: "B",
+    logo: logoBankbazaar,
     challenge:
       "Customer engagement campaigns struggled with low click-through and channel fatigue on traditional SMS.",
     solution:

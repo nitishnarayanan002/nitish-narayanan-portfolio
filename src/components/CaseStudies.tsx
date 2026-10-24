@@ -66,10 +66,6 @@ export default function CaseStudies() {
             <p className="mt-2 font-display text-4xl font-black text-muted-foreground/50">
               many more…
             </p>
-            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-              Hundreds of deployments across healthcare, retail, automotive and BFSI — happy to walk
-              you through the ones most relevant to your business.
-            </p>
             <a
               href="#contact"
               className="mt-5 inline-block font-mono text-[11px] uppercase tracking-[0.16em] text-primary hover:underline"
