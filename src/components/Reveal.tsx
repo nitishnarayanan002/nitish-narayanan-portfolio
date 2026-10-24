@@ -20,7 +20,9 @@ export function Reveal({
     if (!el) return;
     const io = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
+        const entry = entries[0];
+        if (!entry) return;
+        if (entry.isIntersecting) {
           setVisible(true);
           io.disconnect();
         }
@@ -52,7 +54,8 @@ export function Counter({ value, suffix = "" }: { value: number; suffix?: string
     let raf = 0;
     const io = new IntersectionObserver(
       (entries) => {
-        if (!entries[0].isIntersecting) return;
+        const entry = entries[0];
+        if (!entry || !entry.isIntersecting) return;
         io.disconnect();
         const start = performance.now();
         const duration = 1400;

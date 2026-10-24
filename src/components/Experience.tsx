@@ -6,7 +6,9 @@ import { cn } from "@/lib/utils";
 
 export default function Experience() {
   const [active, setActive] = useState(0);
-  const role = roles[active];
+  const role = roles[active] ?? roles[0];
+  if (!role) return null;
+
 
   return (
     <section id="experience" className="border-y border-border bg-panel py-24 md:py-32">
