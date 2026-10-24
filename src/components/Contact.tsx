@@ -31,6 +31,7 @@ export default function Contact() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href={contact.resume}
+              download="Nitish_Narayanan_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-primary-foreground transition-transform hover:-translate-y-0.5"
