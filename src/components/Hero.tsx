@@ -74,7 +74,7 @@ export default function Hero() {
               <img
                 src={contact.profileImage}
                 alt="Nitish Narayanan"
-                className="aspect-[3/4] w-full object-cover"
+                className="aspect-[6/7] w-full object-cover"
               />
               <span aria-hidden className="absolute -left-px -top-px h-5 w-5 border-l-2 border-t-2 border-primary" />
               <span aria-hidden className="absolute -right-px -top-px h-5 w-5 border-r-2 border-t-2 border-primary" />
